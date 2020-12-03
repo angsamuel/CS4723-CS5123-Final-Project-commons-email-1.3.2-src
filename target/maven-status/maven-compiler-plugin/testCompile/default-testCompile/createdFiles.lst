@@ -1,2 +1,3 @@
-org/apache/commons/mail/FirstTest.class
+org/apache/commons/mail/test/FirstTest.class
+org/apache/commons/mail/test/SecondTest.class
 org/apache/commons/mail/TemplateTest.class
