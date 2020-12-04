@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Building.."'
+                sh 'echo "BUILD"'
                 sh 'mvn -B -DskipTests clean package'
                 
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'TEST'
                 sh 'mvn test'
                 sh 'echo "User ID: ccr___"'
                 sh 'echo "Test 1: addCC Test, and Test 2: buildMimeMessages Test, both complete!"'
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'DEPLOY'
                 sh 'make'
             }
         }
